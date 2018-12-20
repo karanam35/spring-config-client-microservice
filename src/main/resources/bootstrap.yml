@@ -1,0 +1,15 @@
+server:
+  port: 8443
+  
+spring: 
+  application:
+    name: client-app
+  profiles:
+    active:
+    - local
+  cloud:
+    config:
+      uri: http://localhost:8003
+management:
+  security:
+    enabled: false
